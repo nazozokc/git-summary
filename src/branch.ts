@@ -3,5 +3,7 @@ import { execa } from "execa";
 
 export const branch = async (): Promise<void> => {
   const branch = await execa("git", ["branch", "--show-current"]);
-  consola.info(branch.stdout);
+  consola.log("branch");
+  consola.log("--------------------------------------");
+  consola.info(branch.stdout.split("\n"));
 };
