@@ -1,4 +1,3 @@
-import { consola } from "consola";
 import { cli } from "gunshi";
 import { branch } from "./branch.ts";
 import { upstream } from "./upstream.ts";
