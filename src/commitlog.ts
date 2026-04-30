@@ -5,8 +5,9 @@ export const commitlog = async (): Promise<void> => {
   const commit = await execa("git", ["log", "--oneline", "-5"]);
   const commitlog = commit.stdout.split("\n");
   consola.log("commit-log");
-  consola.log("--------------------------------------------");
+  consola.log("--------------------------------------");
   for (const commitconsola of commitlog) {
     consola.log(commitconsola);
   }
+  consola.log("");
 };
