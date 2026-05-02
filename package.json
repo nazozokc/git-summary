@@ -2,6 +2,9 @@
   "name": "git-summary",
   "module": "src/main.ts",
   "type": "module",
+  "bin": {
+    "git-summary": "bun run ./src/main.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
